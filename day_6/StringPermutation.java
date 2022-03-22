@@ -1,4 +1,4 @@
-package dailyCoding.day6;
+package dailyCoding.day_6;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,7 +1,5 @@
-package dailyCoding.day12;
+package dailyCoding.day_12;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class CheckIP {

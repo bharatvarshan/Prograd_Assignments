@@ -1,4 +1,4 @@
-package dailyCoding.day7;
+package dailyCoding.day_7;
 
 import java.util.ArrayList;
 import java.util.Collections;

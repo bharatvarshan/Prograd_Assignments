@@ -1,4 +1,4 @@
-package dailyCoding.day1;
+package dailyCoding.day_1;
 import java.util.*;
 
 public class anagrams {

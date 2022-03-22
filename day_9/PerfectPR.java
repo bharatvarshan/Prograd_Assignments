@@ -1,4 +1,4 @@
-package dailyCoding.day9;
+package dailyCoding.day_9;
 
 import java.util.Scanner;
 

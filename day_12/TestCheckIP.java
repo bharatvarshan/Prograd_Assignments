@@ -1,8 +1,7 @@
-package dailyCoding.day12;
+package dailyCoding.day_12;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;

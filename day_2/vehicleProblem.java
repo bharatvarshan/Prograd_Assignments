@@ -1,4 +1,4 @@
-package dailyCoding.day2;
+package dailyCoding.day_2;
 
 class Vehicle{
     public void name(){

@@ -1,4 +1,4 @@
-package dailyCoding.day5;
+package dailyCoding.day_5;
 
 import java.util.Scanner;
 
@@ -68,5 +68,7 @@ public class ExceptionHandling {
 class InputException extends Exception{
     public InputException(String msg){
         super(msg);
+        System.out.println("Uhh oh! Some Error Occurred!");
+
     }
 }

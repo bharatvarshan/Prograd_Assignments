@@ -1,4 +1,4 @@
-package dailyCoding.day4;
+package dailyCoding.day_4;
 
 import java.util.ArrayList;
 import java.util.Scanner;
