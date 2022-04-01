@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: aqua;
+            display: flex;
+            float: right;
+        }
+
+        /* div {
+            padding: 15px;
+            border: 5px solid black;
+            margin: 50px;
+            background-color: aquamarine;
+            flex: 150px 1 0;
+        } */
+
+        .div2 {
+            padding: 15px;
+            border: 5px solid black;
+            margin: 50px;
+            background-color: aquamarine;
+            flex: 0 0.5 250px;
+        }
+
+        .div3 {
+            padding: 15px;
+            border: 5px solid black;
+            margin: 50px;
+            background-color: aquamarine;
+            flex: 0 1 500px;
+        }
+
+        div.gradient {
+            background-image: conic-gradient();
+        }
+
+
+        .display {
+            /* display: none; */
+            /* visibility: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="inline">This is the content 1</div>
+    <div class="inline div2">This is the content 1</div>
+    <div class="inline div3">This is the content 1</div>
+    <div class="gradient">This is the content 1</div>
+
+
+    <!-- <div class="block display">This is the content 2</div>
+    <div class="block display">This is the content 2</div>
+
+    <div class="inline-block">This is the content 3</div>
+    <div class="inline-block">This is the content 3</div>
+
+    <div class="flex">This is the content 4</div>
+    <div class="flex">This is the content 4</div> -->
+</body>
+
+</html>
