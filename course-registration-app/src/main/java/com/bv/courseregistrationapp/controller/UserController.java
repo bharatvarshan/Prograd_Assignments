@@ -35,7 +35,7 @@ public class UserController {
     public String login(Users user) {
         user.setPassword(passwordencoder.encode(user.getPassword()));
         userRepository.save(user);
-        return "registersucess.jsp";
+        return "registersuccess.jsp";
     }
 
     @PostMapping("/loginsuccess")

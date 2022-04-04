@@ -22,7 +22,7 @@
 <body>
 
 <h3>Login</h3>
-<form action="loginsucess">
+<form action="authenticate" method="POST">
     <div class="form-group">
         <label for="InputUsername">Username</label>
         <input type="text" class="form-control" id="InputUsername" name="username" placeholder="Enter username">

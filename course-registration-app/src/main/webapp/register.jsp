@@ -40,7 +40,7 @@
 <%--</form>--%>
 
 <h3>Register</h3>
-<form action="registersucess" method="post">
+<form action="registersuccess">
     <div class="form-group">
         <label for="InputName">Name</label>
         <input type="text" class="form-control" id="InputName" name="name" placeholder="Enter Name">
