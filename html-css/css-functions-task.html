@@ -9,8 +9,10 @@
 
     <style>
         :root {
+            /* declare the variable name with --variable name */
             --height: 200px;
             --width: 200px;
+
         }
 
         .radial-gradient {
@@ -20,18 +22,18 @@
         }
 
         .linear-gradient {
-            height: 200px;
-            width: 200px;
+            height: var(--height);
+            width: var(--width);
             background: linear-gradient(#e66465, #9198e5);
             background: linear-gradient(45deg, blue, red);
-            background: linear-gradient(to right bottom, blue, red);
-            background: linear-gradient(0deg, blue, green 10%, red);
+            /* background: linear-gradient(to right bottom, blue, red); */
+            /* background: linear-gradient(0deg, blue, green 10%, red); */
             ;
         }
 
         .repeating-conic-gradient {
-            height: 200px;
-            width: 200px;
+            height: var(--height);
+            width: var(--width);
             background: repeating-conic-gradient(red 10%, yellow 20%);
             ;
         }

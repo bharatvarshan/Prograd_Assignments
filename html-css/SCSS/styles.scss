@@ -1,0 +1,7 @@
+@use 'variables';
+
+$primary-color : green !global;
+
+body{
+    background-color: $primary-color;
+}
