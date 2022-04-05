@@ -1,5 +1,44 @@
 body {
-  background-color: green;
+  background-color: rgb(255, 188, 63);
 }
+
+h1, .extend-p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+div {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffddcc;
+}
+
+/*
+String Functions:
+
+str-slice --> returns the sliced part of string provide 3 parameter string , start and end
+NOTE: index starts from 1 not 0
+so str-slice("Hello",2,4) returns ell and not llo
+
+unique-id --> returns a unique id in sass session
+
+
+Numeric Functions:
+
+comparable --> Returns boolean value whether the two input value are comparable
+percentage --> converts the number into percentage
+random --> returns a random number b/w 0 and 1
+
+
+colour Functions:
+fade-in and fade-out --> changes opacity
+lighten and darken --> changes lightness
+saturate and desaturate --> changes saturation
+
+List Functions:
+
+append --> append a item to the end
+is-bracketed --> check for square brackets
+
+*/
 
 /*# sourceMappingURL=styles.css.map */
