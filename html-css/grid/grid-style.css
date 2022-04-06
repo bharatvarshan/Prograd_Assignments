@@ -1,0 +1,58 @@
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  gap: 8px 8px;
+  background-color: rgb(253, 165, 0);
+  padding: 8px;
+  text-align: center;
+  border-radius: 8px;
+  /* justify-content: space-around; */
+  align-items: center;
+  grid-template-areas:
+    "a a a"
+    "b c d"
+    "b e e";
+}
+
+.container {
+  background-color: rgb(253, 207, 121);
+  padding: 24px;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  /* grid-area: 1 / 1 / 2 / 2; all containers overlap above each other */
+}
+
+#container-one {
+  /* way - 1 */
+  /* grid-row: 1 / span 3; */
+  /* grid-column: 1 / span 2; */
+
+  /* way - 2 */
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+
+  /* way - 3 */
+  /* row-start /colomn-start / row-end / column-end */
+  /* grid-area: 2/ 1 / -1 /-1; */
+  /* grid-area: a; */
+}
+
+.container-top {
+  grid-area: a;
+}
+
+.container-left {
+  grid-area: b;
+}
+
+.container-mid-one {
+  grid-area: c;
+}
+
+.container-mid-two {
+  grid-area: d;
+}
+
+.container-bottom {
+  grid-area: e;
+}
