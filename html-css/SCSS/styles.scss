@@ -17,13 +17,15 @@ body{
 
 //including the mixin property
 h1{
-    @include custom-text;
+    @include custom-text(2rem);
 }
 
 
 // extending the h1's property
 .extend-p{
     @extend h1;
+    color: green;
+
 }
 
 

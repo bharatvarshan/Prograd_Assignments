@@ -1,2 +1,7 @@
-@mixin custom-text {
-font-family: 'Courier New', Courier, monospace;}
+$variable-color : red;
+
+@mixin custom-text($custom-font-size : 1rem) {
+    color:  $variable-color;
+font-family: 'Courier New', Courier, monospace;
+font-size: $custom-font-size;
+}

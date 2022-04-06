@@ -3,7 +3,13 @@ body {
 }
 
 h1, .extend-p {
+  color: red;
   font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+}
+
+.extend-p {
+  color: green;
 }
 
 div {
