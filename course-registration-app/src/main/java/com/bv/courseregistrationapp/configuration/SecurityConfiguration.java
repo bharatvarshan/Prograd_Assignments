@@ -22,21 +22,21 @@ class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     private JwtRequestFilter jwtRequestFilter;
 
     @Autowired
-    public void configure(AuthenticationManagerBuilder auth) throws Exception {
-        //authenticate
+    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+        //tell auth manager to myuserdetailservice instead of default service
         auth.userDetailsService(myUserDetailsService);
     }
 
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
 
+        //
         httpSecurity.csrf().disable()
                 .authorizeRequests().antMatchers("/authenticate", "/login", "/", "/register","/registersuccess","/loginsucess").permitAll().
                 anyRequest().authenticated().and().
                 exceptionHandling().and().sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS); // to make request everytime a new one. state is not cached.
         httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
-
     }
 
     @Bean

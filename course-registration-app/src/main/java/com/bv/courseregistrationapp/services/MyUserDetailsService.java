@@ -21,10 +21,14 @@ public class MyUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+
         Users user = userRepository.findByUsername(username);
         if (user == null) {
             return null;
         }
+
+//        using a repo make connection to the database
+                //fetch all the details from the database
         return new User(user.getUsername(), user.getPassword() , new ArrayList<>());
     }
 }
