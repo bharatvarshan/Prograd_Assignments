@@ -1,0 +1,19 @@
+@import 'defaults';
+@import 'border';
+
+
+
+.contact__content {
+    border: 10px solid #5e6161;
+    border-style: none solid;
+    padding: 100px;
+    text-align: center;
+    box-sizing:border-box;
+    left: 0;
+    right: 0;
+  }
+
+.contact__p{
+    color: #333;
+    font-size: 22px;
+}
